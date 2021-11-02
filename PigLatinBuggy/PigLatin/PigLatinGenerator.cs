@@ -83,7 +83,7 @@ namespace PigLatin
         public string ToPigLatin()
         {
             string output = "";
-            foreach (String sub in UserString)
+            foreach (string sub in UserString)
             {
                 //check for special chars
                 if (HasSpecialChar(sub))
@@ -117,7 +117,7 @@ namespace PigLatin
                     output+= secondPart + firstPart + "ay" + " ";
                 }
             }
-            return output;
+            return output.Trim();
       
         }
     }
